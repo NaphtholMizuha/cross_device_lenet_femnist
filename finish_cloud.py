@@ -14,9 +14,9 @@
 # ============================================================================
 """Cross device cloud finish."""
 
+import argparse
 import os
 import subprocess
-import argparse
 
 parser = argparse.ArgumentParser(description="Finish cross_device_cloud case")
 parser.add_argument("--redis_port", type=int, default=8113)

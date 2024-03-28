@@ -14,9 +14,10 @@
 # ============================================================================
 """start running lenet cross device cloud mode"""
 
+import argparse
 import os
 import sys
-import argparse
+
 import numpy as np
 from mindspore_federated.startup.ssl_config import SSLConfig
 
@@ -49,34 +50,39 @@ def get_trainable_params(network):
         if param_np.dtype != np.float32:
             continue
         feature_map[param.name] = param_np
+    print(feature_map)
     return feature_map
 
 
 def start_one_server():
     """start one server"""
-    from network.lenet import LeNet5
     from mindspore_federated import FLServerJob
-
+    from autoencoder import AutoEncoder
+    import mindspore.nn as nn
+    
     yaml_config = args.yaml_config
     tcp_server_ip = args.tcp_server_ip
     http_server_address = args.http_server_address
     checkpoint_dir = args.checkpoint_dir
-
-    network = LeNet5(62, 3)
+    
+    network = AutoEncoder(105,32,5)
     job = FLServerJob(yaml_config=yaml_config, http_server_address=http_server_address, tcp_server_ip=tcp_server_ip,
                       checkpoint_dir=checkpoint_dir, ssl_config=ssl_config)
     feature_map = get_trainable_params(network)
+    print("### aggregation type:", job.aggregation_type)
     job.run(feature_map)
+    
 
 
 def start_one_scheduler():
     """start one scheduler"""
     from mindspore_federated import FlSchedulerJob
-
+    
     yaml_config = args.yaml_config
     scheduler_manage_address = args.scheduler_manage_address
 
     job = FlSchedulerJob(yaml_config=yaml_config, manage_address=scheduler_manage_address, ssl_config=ssl_config)
+    
     job.run()
 
 

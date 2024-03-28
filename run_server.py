@@ -14,8 +14,8 @@
 # ============================================================================
 """start running lenet server of cross device cloud mode"""
 
-import os
 import argparse
+import os
 import subprocess
 
 parser = argparse.ArgumentParser(description="Run run_cloud.py case")
