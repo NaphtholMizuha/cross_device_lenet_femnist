@@ -1,0 +1,219 @@
+[INFO] ME(5998,7fd56d14c3c0,python):2023-04-15-10:28:40.499.657 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:47] LoadDynamicLib] Load dynamic library: libmindspore_ascend.so failed. libge_runner.so: cannot open shared object file: No such file or directory
+[INFO] ME(5998,7fd56d14c3c0,python):2023-04-15-10:28:40.500.843 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:47] LoadDynamicLib] Load dynamic library: libmindspore_gpu.so.11.6 failed. libnvrtc.so.11.2: cannot open shared object file: No such file or directory
+[INFO] ME(5998,7fd56d14c3c0,python):2023-04-15-10:28:40.570.351 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:195] LoadPlugin] Load libmindspore_gpu plugin file /home/qiyijie/.conda/envs/mindspore/lib/python3.9/site-packages/mindspore/lib/plugin/libmindspore_gpu.so.11.1 success, skip loading other version.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:40.598.575 [mindspore/ccsrc/pybind_api/ir/log_adapter_py.h:30] PyExceptionInitializer] Set exception handler
+[INFO] CORE(5998,7fd56d14c3c0,python):2023-04-15-10:28:40.673.453 [mindspore/core/utils/ms_context.cc:316] SetDeviceTargetFromInner] ms set context device target:GPU
+[INFO] PARALLEL(5998,7fd56d14c3c0,python):2023-04-15-10:28:40.673.504 [mindspore/ccsrc/frontend/parallel/costmodel_context.cc:30] GetInstance] Create costmodel_context
+[INFO] ME(5998:140554634838976,MainProcess):2023-04-15-10:28:40.673.902 [mindspore/run_check/_check_version.py:537] Setting the env `PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python` to prevent memory overflow during save or load checkpoint file.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.900.738 [mindspore/ccsrc/pipeline/jit/pipeline.cc:255] RecordInitStatus] Status record: system init.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.966.033 [mindspore_federated/fl_arch/ccsrc/common/fl_context.cc:113] set_http_server_address] Http server address is:192.168.199.162:8021
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.977.414 [mindspore_federated/fl_arch/ccsrc/common/fl_context.cc:53] set_server_mode] Server mode: FEDERATED_LEARNING is used for Server and Worker. Scheduler will ignore it.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.977.465 [mindspore_federated/fl_arch/ccsrc/common/core/yaml_config.cc:148] InitUnsupervisedConfig] cluster_client_num is 0, eval_type is NOT_EVAL
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.977.492 [mindspore_federated/fl_arch/ccsrc/common/core/yaml_config.cc:195] InitCompressionConfig] upload_compress_type is NO_COMPRESS, upload_sparse_rate is 0.4, download_compress_type is NO_COMPRESS
+[INFO] FEDERATED(5998:140554634838976,MainProcess):2023-04-15-10:28:41.978.160 [mindspore_federated/startup/federated_local.py:304] Recovery ckpt files is: [].
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.978.420 [mindspore_federated/fl_arch/ccsrc/common/fl_context.cc:76] set_ms_role] MS_ROLE of this node is MS_SERVER
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.980.137 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:142] Init] The max connection is:10000
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.981.908 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:51] CreateBufferEvent] SSL is disable.
+[INFO] FEDERATED(5998,7fd47f0b8700,python):2023-04-15-10:28:41.982.089 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:264] ListenerCallbackInner] SSL is disable.
+[INFO] FEDERATED(5998,7fd46ce43700,python):2023-04-15-10:28:41.982.108 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:175] NotifyConnected] Client connected to the server! Peer Server ip: 192.168.199.162, port: 46485
+[INFO] FEDERATED(5998,7fd47f0b8700,python):2023-04-15-10:28:41.982.126 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:300] ListenerCallbackInner] A client is connected, fd is 13
+[INFO] FEDERATED(5998,7fd46ce43700,python):2023-04-15-10:28:41.982.145 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:208] EventCallbackInner] Client connected! Peer Server ip: 192.168.199.162, port: 46485
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.982.155 [mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:337] InitNodeInfo] The node role:SERVER is generate uuid is:192.168.199.162:46485::2023-04-15-10:28:41.982.145::69383, the ip:192.168.199.162, the port:46485
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.982.175 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:31] InitializeBeforeCache] [Server start]: Server node create tcp server successful!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.982.189 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/redis/redis.cc:675] Init] Try connect to redis sever 127.0.0.1:23457, retry time in seconds 900
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.988.875 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/redis/redis.cc:689] Init] Connect to redis sever 127.0.0.1:23457 successfully
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.297 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:245] SyncCache2Local] Sync hyper params from cache success
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.310 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:89] SyncOnNewInstance] start_fl_job_threshold: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.315 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:90] SyncOnNewInstance] start_fl_job_time_window in ms: 30000000
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.323 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:91] SyncOnNewInstance] update_model_ratio: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.328 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:92] SyncOnNewInstance] update_model_time_window in ms: 30000000
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.333 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:93] SyncOnNewInstance] fl_iteration_num: 1000
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.337 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:94] SyncOnNewInstance] client_epoch_num: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.341 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:95] SyncOnNewInstance] client_batch_size: 16
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.347 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:96] SyncOnNewInstance] client_learning_rate: 1e-05
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.351 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:97] SyncOnNewInstance] global_iteration_time_window in ms: 60000000
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:41.989.360 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/server.cc:140] LockCache] Begin to lock server
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:42.989.619 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/server.cc:165] LockCache] Lock server successfully
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:42.989.669 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:149] ServerPingPong] Begin ping all other servers
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:42.989.805 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:191] PingOneServer] Send ping message to 192.168.199.162:36927::2023-04-15-10:28:41.358.275::69383
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:42.996.801 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:51] CreateBufferEvent] SSL is disable.
+[INFO] FEDERATED(5998,7fd46ce43700,python):2023-04-15-10:28:42.996.988 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:175] NotifyConnected] Client connected to the server! Peer Server ip: 192.168.199.162, port: 36927
+[INFO] FEDERATED(5998,7fd46ce43700,python):2023-04-15-10:28:42.997.045 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:208] EventCallbackInner] Client connected! Peer Server ip: 192.168.199.162, port: 36927
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:42.997.089 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:191] PingOneServer] Send ping message to 192.168.199.162:37027::2023-04-15-10:28:41.714.022::69383
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.004.128 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:51] CreateBufferEvent] SSL is disable.
+[INFO] FEDERATED(5998,7fd46ce43700,python):2023-04-15-10:28:43.004.315 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:175] NotifyConnected] Client connected to the server! Peer Server ip: 192.168.199.162, port: 37027
+[INFO] FEDERATED(5998,7fd46ce43700,python):2023-04-15-10:28:43.004.348 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:208] EventCallbackInner] Client connected! Peer Server ip: 192.168.199.162, port: 37027
+[INFO] FEDERATED(5998,7fd47f0b8700,python):2023-04-15-10:28:43.004.404 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:264] ListenerCallbackInner] SSL is disable.
+[INFO] FEDERATED(5998,7fd47f0b8700,python):2023-04-15-10:28:43.004.450 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:300] ListenerCallbackInner] A client is connected, fd is 20
+[INFO] FEDERATED(5998,7fd47f0b8700,python):2023-04-15-10:28:43.004.508 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:248] HandleServerPong] Receive pong message from 192.168.199.162:36927::2023-04-15-10:28:41.358.275::69383
+[INFO] FEDERATED(5998,7fd47f0b8700,python):2023-04-15-10:28:43.012.036 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:264] ListenerCallbackInner] SSL is disable.
+[INFO] FEDERATED(5998,7fd47f0b8700,python):2023-04-15-10:28:43.012.067 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:300] ListenerCallbackInner] A client is connected, fd is 21
+[INFO] FEDERATED(5998,7fd47f0b8700,python):2023-04-15-10:28:43.012.136 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:248] HandleServerPong] Receive pong message from 192.168.199.162:37027::2023-04-15-10:28:41.714.022::69383
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.012.320 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:169] ServerPingPong] Success receive pong message from servers: [192.168.199.162:36927::2023-04-15-10:28:41.358.275::69383, 192.168.199.162:37027::2023-04-15-10:28:41.714.022::69383]
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.012.345 [mindspore_federated/fl_arch/ccsrc/common/fl_context.cc:105] GenerateResetterRound] Server context is 2. Resetter round is 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.012.357 [mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:220] GetOrCreateTcpComm] Create Tcp communicator.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.015.869 [mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:208] GetOrCreateHttpComm] Create Http communicator.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.016.400 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/model_info.cc:103] SyncCache2Local] Sync model info from cache success
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.016.456 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:267] GetModelWeight] Begin get model weight of iteration 0 from other servers
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.064.730 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:317] GetModelWeight] Success to get model weight of iteration 0 from other servers, model size: 16324104
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.074.224 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:30] Initialize] Latest iteration num is 0
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.081.646 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is embedding_postprocessor.embedding_table, weight byte size is 1024
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.081.741 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is embedding_postprocessor.full_position_embeddings, weight byte size is 262144
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.081.755 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is embedding_postprocessor.layernorm.beta, weight byte size is 512
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.081.763 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is embedding_postprocessor.layernorm.gamma, weight byte size is 512
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.081.774 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.attention.attention.key.bias, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.081.856 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.attention.attention.key.weight, weight byte size is 389376
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.081.870 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.attention.attention.query.bias, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.081.954 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.attention.attention.query.weight, weight byte size is 389376
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.081.967 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.attention.attention.value.bias, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.043 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.attention.attention.value.weight, weight byte size is 389376
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.054 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.attention.output.dense.bias, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.128 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.attention.output.dense.weight, weight byte size is 389376
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.140 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.attention.output.layernorm.beta, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.148 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.attention.output.layernorm.gamma, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.161 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.ffn.bias, weight byte size is 4992
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.457 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.ffn.weight, weight byte size is 1557504
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.486 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.ffn_output.bias, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.767 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.ffn_output.weight, weight byte size is 1557504
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.781 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.full_layer_layer_norm.beta, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.791 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.albert_layer_groups.0.albert_layers.0.full_layer_layer_norm.gamma, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.803 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.embedding_hidden_mapping_in.bias, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.840 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is encoder.embedding_hidden_mapping_in.weight, weight byte size is 159744
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.852 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is pooler.bias, weight byte size is 1248
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.082.931 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is pooler.weight, weight byte size is 389376
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.084.840 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is word_embeddings.embedding_table, weight byte size is 10817536
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.194.995 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:339] AssignNewCompressModelMemory] Register compressWeight for compressType: QUANT
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.202.609 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:43] Initialize] Model store checkpoint dir is: /home/qiyijie/git_projects/mindspore/federated/example/cross_device_albert2/./fl_ckpt/
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.210.849 [mindspore_federated/fl_arch/ccsrc/server/server.cc:607] SyncAndInitModel] Load model success: The model synced from other servers is used as the model of iteration 0
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.517 [mindspore_federated/fl_arch/ccsrc/server/server.cc:158] InitRoundConfigs] Initializing cipher:
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.556 [mindspore_federated/fl_arch/ccsrc/server/server.cc:159] InitRoundConfigs]  exchange_keys_threshold: 1 get_keys_threshold: 1 share_secrets_threshold: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.566 [mindspore_federated/fl_arch/ccsrc/server/server.cc:162] InitRoundConfigs]  get_secrets_threshold: 1 get_client_list_threshold: 2 push_list_sign_threshold: 2 get_list_sign_threshold: 2 minimum_clients_for_reconstruct: 2 minimum_secret_shares_for_reconstruct: 1 cipher_time_window: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.586 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:64] InitIteration] Time window for one iteration is 60000000
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.624 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round startFLJob, check_timeout: 1, time window: 30000000, check_count: 1, threshold: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.635 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round startFLJob start initialize.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.650 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/timer.cc:157] RegisterTimer] Register timer for startFLJob, time length in seconds: 30000
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.663 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/counter.cc:46] RegisterCounter] Register counter for startFLJob, threshold: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.674 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round startFLJob register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.682 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: startFLJob
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.694 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round startFLJob register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.214.704 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: startFLJob
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.215.564 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:8021/startFLJob
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.215.600 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round updateModel, check_timeout: 1, time window: 30000000, check_count: 1, threshold: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.215.611 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round updateModel start initialize.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.215.620 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/timer.cc:157] RegisterTimer] Register timer for updateModel, time length in seconds: 30000
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.215.638 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/counter.cc:66] RegisterPerServerCounter] Register counter(total count of all valid servers) for updateModel, threshold: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.215.662 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round updateModel register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.215.669 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: updateModel
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.215.680 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round updateModel register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.215.687 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: updateModel
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.216.459 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:8021/updateModel
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.216.494 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/counter.cc:66] RegisterPerServerCounter] Register counter(total count of all valid servers) for count_for_aggregation, threshold: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.216.510 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round getModel, check_timeout: 0, time window: 3000, check_count: 0, threshold: 0
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.216.536 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round getModel start initialize.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.216.544 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round getModel register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.216.550 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: getModel
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.216.562 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round getModel register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.216.569 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: getModel
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.217.313 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:8021/getModel
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.217.345 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round pullWeight, check_timeout: 0, time window: 3000, check_count: 0, threshold: 0
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.217.355 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round pullWeight start initialize.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.217.363 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pullWeight register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.217.374 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: pullWeight
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.217.382 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pullWeight register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.217.392 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: pullWeight
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.218.157 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:8021/pullWeight
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.218.184 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round pushWeight, check_timeout: 0, time window: 3000, check_count: 0, threshold: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.218.194 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round pushWeight start initialize.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.218.202 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pushWeight register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.218.212 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: pushWeight
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.218.220 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pushWeight register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.218.231 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: pushWeight
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.026 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:8021/pushWeight
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.062 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round pushMetrics, check_timeout: 0, time window: 3000, check_count: 1, threshold: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.073 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round pushMetrics start initialize.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.082 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/counter.cc:46] RegisterCounter] Register counter for pushMetrics, threshold: 1
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.092 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pushMetrics register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.101 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: pushMetrics
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.108 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pushMetrics register message callback.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.116 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: pushMetrics
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.792 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:8021/pushMetrics
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.817 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/timer.cc:157] RegisterTimer] Register timer for globalTimer, time length in seconds: 60000
+[WARNING] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.834 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:91] InitIteration] instance name is empty
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.870 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:530] InitConfig] Create Directory :.. success.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.878 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:328] InitEventTxtFile] Create Directory :event.txt success.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.219.960 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:35] Start] [Server start]: The node role:SERVER the node id:192.168.199.162:46485::2023-04-15-10:28:41.982.145::69383 start communicator and http server!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.220.102 [mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:277] StartHttpServer] Initialize http server IP:192.168.199.162, PORT:8021
+[ERROR] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.223.595 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:71] InitServer] Bind ip:192.168.199.162 port:8021failed!
+[ERROR] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.223.631 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:118] Start] Load http server failed, server address: 192.168.199.162, server port: 8021
+[ERROR] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.223.650 [mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:279] StartHttpServer] Http server starting failed.
+[WARNING] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.223.755 [mindspore_federated/fl_arch/ccsrc/server/server.cc:79] Run] Catch exception and begin exit, exception: mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:279 StartHttpServer] Http server starting failed.
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.223.895 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/server.cc:202] UnlockCache] Unlock server successfully
+[INFO] FEDERATED(5998:140554634838976,MainProcess):2023-04-15-10:28:43.223.974 [mindspore_federated/startup/federated_local.py:196] before stopped callback
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.224.177 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:46] Stop] Begin stop server node!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.224.195 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:204] Stop] Stop tcp server!
+[INFO] FEDERATED(5998,7fd47f0b8700,python):2023-04-15-10:28:43.224.293 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:185] operator()] Event base dispatch and exit success!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.224.424 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:204] Stop] Stop tcp server!
+[WARNING] FEDERATED(5998,7fd46ce43700,python):2023-04-15-10:28:43.224.437 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:226] EventCallbackInner] Client connected end of file! Peer Server ip: 192.168.199.162, port: 46485
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.224.481 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:146] Stop] Stop tcp client!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.224.500 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:146] Stop] Stop tcp client!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.224.510 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:146] Stop] Stop tcp client!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.224.534 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:146] Stop] Stop tcp client!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.224.548 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:139] Stop] Stop http server begin!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.224.558 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:160] Stop] Stop http server end!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.224.566 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:55] Stop] End stop server node!
+[INFO] FEDERATED(5998,7fd46ce43700,python):2023-04-15-10:28:43.224.609 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:104] operator()] Event base dispatch failed with no events pending or active!
+Traceback (most recent call last):
+  File "/home/qiyijie/git_projects/mindspore/federated/example/cross_device_albert2/logs/server_8021/./../../run_cloud.py", line 90, in <module>
+    start_one_server()
+  File "/home/qiyijie/git_projects/mindspore/federated/example/cross_device_albert2/logs/server_8021/./../../run_cloud.py", line 73, in start_one_server
+    job.run(feature_map)
+  File "/home/qiyijie/.conda/envs/mindspore/lib/python3.9/site-packages/mindspore_federated/startup/federated_local.py", line 184, in run
+    Federated_.start_federated_server(feature_list_cxx, recovery_iteration, self.after_started_callback,
+RuntimeError: mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:279 StartHttpServer] Http server starting failed.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.225.258 [mindspore/ccsrc/pipeline/jit/init.cc:431] operator()] Start releasing dataset handles...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.225.297 [mindspore/ccsrc/pipeline/jit/init.cc:434] operator()] End release dataset handles.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.225.313 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2010] ClearResAtexit] Pipeline clear all resource
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.225.406 [mindspore/ccsrc/pipeline/jit/pipeline.cc:260] RecordExitStatus] Status record: system exit.
+[INFO] DEBUG(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.225.436 [mindspore/ccsrc/common/debug/env_config_parser.cc:153] ParseFromFile] The 'env_config_path' in 'mindspore.context.set_context(env_config_path={path})' is empty.
+[INFO] ME(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.225.974 [mindspore/core/mindrt/src/actor/actormgr.cc:150] Finalize] mindrt Actors finish exiting.
+[INFO] ME(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.226.002 [mindspore/core/mindrt/src/actor/actormgr.cc:153] Finalize] mindrt Threads finish exiting.
+[INFO] ME(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.226.011 [mindspore/core/mindrt/src/actor/actormgr.cc:164] Finalize] mindrt IOMGRS finish exiting.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.226.025 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1892] ClearResPart1] Start clear kernel runtime...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.226.040 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1894] ClearResPart1] End clear kernel runtime.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.226.051 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1896] ClearResPart1] Start Finalize StreamSynchronizer...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.226.068 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1898] ClearResPart1] End Finalize StreamSynchronizer...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.713 [mindspore/ccsrc/pipeline/jit/pipeline.cc:654] ClearRes] Clean executor resource!
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.738 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1914] ClearResPart2] Start clear PyNativeExecutor...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.781 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1916] ClearResPart2] End clear PyNativeExecutor.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.795 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1928] ClearResPart2] Start clear ConfigManager...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.803 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1930] ClearResPart2] End clear ConfigManager.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.812 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1937] ClearResPart2] Start clear device context...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.823 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1939] ClearResPart2] End clear device context.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.833 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1941] ClearResPart2] Start clear AnalysisResultCacheMgr...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.843 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1943] ClearResPart2] End clear AnalysisResultCacheMgr.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.853 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1945] ClearResPart2] Start clear AnalysisContext...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.863 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1947] ClearResPart2] End clear AnalysisContext...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.874 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1949] ClearResPart2] Start clear AnalysisSchedule...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.927 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1951] ClearResPart2] End clear AnalysisSchedule...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.938 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1954] ClearResPart2] Start clear python_adapter...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.947 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1956] ClearResPart2] End clear python_adapter.
+[INFO] DEBUG(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.970 [mindspore/ccsrc/debug/debugger/debugger.cc:95] Debugger] Debugger got device_target: GPU
+[INFO] DEBUG(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.985 [mindspore/ccsrc/debug/debugger/debugger.cc:299] Reset] Release Debugger resource.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.227.996 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1966] ClearResPart3] Start clear ClearObjectCache...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.007 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1968] ClearResPart3] End clear ClearObjectCache...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.023 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1970] ClearResPart3] Start clear Parser...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.275 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1972] ClearResPart3] End clear Parser...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.290 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1974] ClearResPart3] Start ClearTraceStack...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.307 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1976] ClearResPart3] End ClearTraceStack...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.317 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1978] ClearResPart3] Start clear InterpretNodeRecorder...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.330 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1980] ClearResPart3] End clear InterpretNodeRecorder...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.341 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1982] ClearResPart3] Start clear parallel::entire_costgraph...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.351 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1984] ClearResPart3] End clear parallel::entire_costgraph...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.362 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1986] ClearResPart3] Start clear ProtobufLibrary...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.524 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1988] ClearResPart3] End clear ProtobufLibrary...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.540 [mindspore/ccsrc/pipeline/jit/pipeline.cc:1992] ClearSingleton] Start clear singleton...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.593 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2006] ClearSingleton] End clear singleton.
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.604 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2015] ClearResAtexit] Start unload dynamic lib...
+[INFO] PIPELINE(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.228.621 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2017] ClearResAtexit] End unload dynamic lib...
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.676.450 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:72] Stop] Stop tcp client event dispatch!
+[INFO] FEDERATED(5998,7fd56d14c3c0,python):2023-04-15-10:28:43.676.574 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:139] Stop] Stop http server begin!

@@ -1,11 +1,11 @@
-fl_name: Lenet
+fl_name: Albert
 fl_iteration_num: 5000
 server_mode: FEDERATED_LEARNING
 enable_ssl: false
 
 distributed_cache:
   type: redis
-  address: 127.0.0.1:2345
+  address: 127.0.0.1:23456
   plugin_lib_path: ""
   # ssl config when enable_ssl is true
   cacert_filename: ""
@@ -28,12 +28,8 @@ summary:
   data_rate_dir: "."
   participation_time_level: "5,15"
 
-unsupervised:
-  cluster_client_num: 1000
-  eval_type: SILHOUETTE_SCORE
-
 encrypt:
-  encrypt_train_type: NOT_ENCRYPT
+  encrypt_type: NOT_ENCRYPT
   pw_encrypt:
     share_secrets_ratio: 1.0
     cipher_time_window: 3000

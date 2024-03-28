@@ -1,0 +1,857 @@
+[INFO] ME(160609,7fba307c4280,python):2024-02-26-16:09:10.491.752 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:47] LoadDynamicLib] Load dynamic library: libmindspore_ascend.so failed. libge_runner.so: cannot open shared object file: No such file or directory
+[INFO] ME(160609,7fba307c4280,python):2024-02-26-16:09:10.492.012 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:47] LoadDynamicLib] Load dynamic library: libmindspore_gpu.so.11.6 failed. libcublas.so.11: cannot open shared object file: No such file or directory
+[INFO] ME(160609,7fba307c4280,python):2024-02-26-16:09:10.492.196 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:47] LoadDynamicLib] Load dynamic library: libmindspore_gpu.so.11.1 failed. libcublas.so.11: cannot open shared object file: No such file or directory
+[INFO] ME(160609,7fba307c4280,python):2024-02-26-16:09:10.492.465 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:47] LoadDynamicLib] Load dynamic library: libmindspore_gpu.so.10.1 failed. libcudnn.so.7: cannot open shared object file: No such file or directory
+[INFO] CORE(160609,7fba307c4280,python):2024-02-26-16:09:10.492.482 [mindspore/core/utils/ms_context.cc:186] set_backend_policy] ms set context backend policy:ms
+[INFO] PIPELINE(160609,7fba307c4280,python):2024-02-26-16:09:10.506.740 [mindspore/ccsrc/pybind_api/ir/log_adapter_py.h:30] PyExceptionInitializer] Set exception handler
+[INFO] CORE(160609,7fba307c4280,python):2024-02-26-16:09:10.511.535 [mindspore/core/utils/ms_context.cc:316] SetDeviceTargetFromInner] ms set context device target:CPU
+[INFO] PARALLEL(160609,7fba307c4280,python):2024-02-26-16:09:10.511.553 [mindspore/ccsrc/frontend/parallel/costmodel_context.cc:30] GetInstance] Create costmodel_context
+[INFO] ME(160609:140437654094464,MainProcess):2024-02-26-16:09:10.511.685 [mindspore/run_check/_check_version.py:537] Setting the env `PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python` to prevent memory overflow during save or load checkpoint file.
+[INFO] PIPELINE(160609,7fba307c4280,python):2024-02-26-16:09:11.409.665 [mindspore/ccsrc/pipeline/jit/pipeline.cc:255] RecordInitStatus] Status record: system init.
+[INFO] DEBUG(160609,7fba307c4280,python):2024-02-26-16:09:11.460.576 [mindspore/ccsrc/debug/debugger/debugger.cc:95] Debugger] Debugger got device_target: CPU
+[INFO] DEBUG(160609,7fba307c4280,python):2024-02-26-16:09:11.460.601 [mindspore/ccsrc/debug/debugger/debugger.cc:123] Init] Debugger got device_id: 0
+[INFO] DEBUG(160609,7fba307c4280,python):2024-02-26-16:09:11.460.605 [mindspore/ccsrc/debug/debugger/debugger.cc:125] Init] Debugger got device_target: CPU
+[INFO] RUNTIME_FRAMEWORK(160609,7fba307c4280,python):2024-02-26-16:09:11.480.995 [mindspore/ccsrc/runtime/graph_scheduler/graph_scheduler.cc:408] Initialize] The actor thread number: 5, the kernel thread number: 25
+[INFO] DEBUG(160609,7fba307c4280,python):2024-02-26-16:09:11.481.037 [mindspore/ccsrc/common/debug/env_config_parser.cc:153] ParseFromFile] The 'env_config_path' in 'mindspore.context.set_context(env_config_path={path})' is empty.
+[INFO] VM(160609,7fba307c4280,python):2024-02-26-16:09:11.481.053 [mindspore/ccsrc/backend/graph_compiler/backend.cc:1333] RunOp] RunOp start StridedSlice
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.242 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:126] CommonUnifyMindIR] start common unify mindir opt graph:0
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.298 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_0_conv_transpose_to_conv_backprop_input in 27.634 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.319 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_1_custom_op_reg_info_to_attr in 10.671 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.331 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_2_inplace_assign_for_custom_op in 5.815 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.361 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_3_convert_attr_to_unify_mindir in 14.387 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.421 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:126] CommonUnifyMindIR] start common unify mindir opt graph:0
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.450 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_0_conv_transpose_to_conv_backprop_input in 9.902 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.463 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_1_custom_op_reg_info_to_attr in 5.776 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.474 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_2_inplace_assign_for_custom_op in 5.082 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.489 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_3_convert_attr_to_unify_mindir in 8.818 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.515 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:90] OpBackendCommonOptimization] Status record: start op common optimization. graph id: 0
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.556 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_op_common_pm_0_reduce_optimizer in 25.531 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.571 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_op_common_pm_1_convert_const_input_to_tensor_input in 8.145 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.591 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:99] OpBackendCommonOptimization] Status record: end op common optimization. graph id: 0
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.481.610 [mindspore/ccsrc/kernel/oplib/oplib.cc:209] RegOpFromLocalInfo] Start
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.481.615 [mindspore/ccsrc/kernel/oplib/oplib.cc:213] RegOpFromLocalInfo] MindSpore op info path does not been set. use op info from python pass.
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.481.624 [mindspore/ccsrc/kernel/oplib/oplib.cc:467] FindOp] FindOp failed: opname: StridedSlice, imply_type: CPU, current op num: 876 is_dynamic_shape:0
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.481.632 [mindspore/ccsrc/plugin/device/cpu/hal/device/kernel_select_cpu.cc:593] SetKernelInfoWithMsg] SetKernelInfo, CNode Name: StridedSlice
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.481.711 [mindspore/ccsrc/plugin/device/cpu/hal/device/kernel_select_cpu.cc:617] SetKernelInfoWithMsg] Input format and dtype is matched
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.481.768 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_pm_0_insert_cast_cpu in 27.494 us
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.482.307 [mindspore/ccsrc/kernel/akg/akg_kernel_build.cc:644] AkgKernelParallelBuild] There is no akg kernel to be compiled.
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.482.319 [mindspore/ccsrc/plugin/device/cpu/hal/hardware/cpu_device_context.cc:397] PreprocessBeforeRun] Status record: end preprocess before run graph. graph id: 0
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.482.385 [mindspore/ccsrc/plugin/device/cpu/hal/hardware/cpu_memory_pool.cc:64] GetSystemMemorySize] Get system memory(MemAvailable): 126098592 kB
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.482.399 [mindspore/ccsrc/plugin/device/cpu/hal/hardware/cpu_memory_pool.cc:82] AllocDeviceMem] Current alloc size[1073741824], total used size[1073741824].
+[INFO] VM(160609,7fba307c4280,python):2024-02-26-16:09:11.482.569 [mindspore/ccsrc/backend/graph_compiler/backend.cc:1333] RunOp] RunOp start ZerosLike
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.630 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:126] CommonUnifyMindIR] start common unify mindir opt graph:1
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.659 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_0_conv_transpose_to_conv_backprop_input in 13.839 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.673 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_1_custom_op_reg_info_to_attr in 6.72 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.682 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_2_inplace_assign_for_custom_op in 4.142 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.694 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_3_convert_attr_to_unify_mindir in 5.524 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.726 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:126] CommonUnifyMindIR] start common unify mindir opt graph:1
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.747 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_0_conv_transpose_to_conv_backprop_input in 7.427 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.757 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_1_custom_op_reg_info_to_attr in 4.315 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.767 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_2_inplace_assign_for_custom_op in 3.748 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.777 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_3_convert_attr_to_unify_mindir in 4.817 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.797 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:90] OpBackendCommonOptimization] Status record: start op common optimization. graph id: 1
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.825 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_op_common_pm_0_reduce_optimizer in 16.245 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.837 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_op_common_pm_1_convert_const_input_to_tensor_input in 5.34 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.853 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:99] OpBackendCommonOptimization] Status record: end op common optimization. graph id: 1
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.482.870 [mindspore/ccsrc/kernel/oplib/oplib.cc:467] FindOp] FindOp failed: opname: ZerosLike, imply_type: CPU, current op num: 876 is_dynamic_shape:0
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.482.876 [mindspore/ccsrc/plugin/device/cpu/hal/device/kernel_select_cpu.cc:593] SetKernelInfoWithMsg] SetKernelInfo, CNode Name: ZerosLike
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.482.903 [mindspore/ccsrc/plugin/device/cpu/hal/device/kernel_select_cpu.cc:617] SetKernelInfoWithMsg] Input format and dtype is matched
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.482.935 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_pm_0_insert_cast_cpu in 12.369 us
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.483.038 [mindspore/ccsrc/kernel/akg/akg_kernel_build.cc:644] AkgKernelParallelBuild] There is no akg kernel to be compiled.
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.483.045 [mindspore/ccsrc/plugin/device/cpu/hal/hardware/cpu_device_context.cc:397] PreprocessBeforeRun] Status record: end preprocess before run graph. graph id: 1
+[INFO] VM(160609,7fba307c4280,python):2024-02-26-16:09:11.483.646 [mindspore/ccsrc/backend/graph_compiler/backend.cc:1333] RunOp] RunOp start TensorScatterUpdate
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.724 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:126] CommonUnifyMindIR] start common unify mindir opt graph:2
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.753 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_0_conv_transpose_to_conv_backprop_input in 13.812 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.766 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_1_custom_op_reg_info_to_attr in 6.411 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.777 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_2_inplace_assign_for_custom_op in 4.616 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.789 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_3_convert_attr_to_unify_mindir in 6.166 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.821 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:126] CommonUnifyMindIR] start common unify mindir opt graph:2
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.844 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_0_conv_transpose_to_conv_backprop_input in 8.267 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.856 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_1_custom_op_reg_info_to_attr in 4.878 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.866 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_2_inplace_assign_for_custom_op in 4.311 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.877 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_3_convert_attr_to_unify_mindir in 5.361 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.897 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:90] OpBackendCommonOptimization] Status record: start op common optimization. graph id: 2
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.930 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_op_common_pm_0_reduce_optimizer in 17.359 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.943 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_op_common_pm_1_convert_const_input_to_tensor_input in 6.162 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.483.959 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:99] OpBackendCommonOptimization] Status record: end op common optimization. graph id: 2
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.483.976 [mindspore/ccsrc/kernel/oplib/oplib.cc:467] FindOp] FindOp failed: opname: TensorScatterUpdate, imply_type: CPU, current op num: 876 is_dynamic_shape:0
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.483.982 [mindspore/ccsrc/plugin/device/cpu/hal/device/kernel_select_cpu.cc:593] SetKernelInfoWithMsg] SetKernelInfo, CNode Name: TensorScatterUpdate
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.484.038 [mindspore/ccsrc/plugin/device/cpu/hal/device/kernel_select_cpu.cc:617] SetKernelInfoWithMsg] Input format and dtype is matched
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.077 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_pm_0_insert_cast_cpu in 15.221 us
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.484.211 [mindspore/ccsrc/kernel/akg/akg_kernel_build.cc:644] AkgKernelParallelBuild] There is no akg kernel to be compiled.
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.484.217 [mindspore/ccsrc/plugin/device/cpu/hal/hardware/cpu_device_context.cc:397] PreprocessBeforeRun] Status record: end preprocess before run graph. graph id: 2
+[INFO] VM(160609,7fba307c4280,python):2024-02-26-16:09:11.484.577 [mindspore/ccsrc/backend/graph_compiler/backend.cc:1333] RunOp] RunOp start StridedSlice
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.641 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:126] CommonUnifyMindIR] start common unify mindir opt graph:3
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.669 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_0_conv_transpose_to_conv_backprop_input in 12.806 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.682 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_1_custom_op_reg_info_to_attr in 6.83 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.693 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_2_inplace_assign_for_custom_op in 4.829 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.707 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_3_convert_attr_to_unify_mindir in 7.754 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.737 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:126] CommonUnifyMindIR] start common unify mindir opt graph:3
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.761 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_0_conv_transpose_to_conv_backprop_input in 8.214 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.773 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_1_custom_op_reg_info_to_attr in 5.178 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.783 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_2_inplace_assign_for_custom_op in 4.625 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.795 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_3_convert_attr_to_unify_mindir in 6.567 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.817 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:90] OpBackendCommonOptimization] Status record: start op common optimization. graph id: 3
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.849 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_op_common_pm_0_reduce_optimizer in 17.867 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.863 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_op_common_pm_1_convert_const_input_to_tensor_input in 6.577 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.881 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:99] OpBackendCommonOptimization] Status record: end op common optimization. graph id: 3
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.484.901 [mindspore/ccsrc/kernel/oplib/oplib.cc:467] FindOp] FindOp failed: opname: StridedSlice, imply_type: CPU, current op num: 876 is_dynamic_shape:0
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.484.907 [mindspore/ccsrc/plugin/device/cpu/hal/device/kernel_select_cpu.cc:593] SetKernelInfoWithMsg] SetKernelInfo, CNode Name: StridedSlice
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.484.935 [mindspore/ccsrc/plugin/device/cpu/hal/device/kernel_select_cpu.cc:617] SetKernelInfoWithMsg] Input format and dtype is matched
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.484.976 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_pm_0_insert_cast_cpu in 16.19 us
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.485.141 [mindspore/ccsrc/kernel/akg/akg_kernel_build.cc:644] AkgKernelParallelBuild] There is no akg kernel to be compiled.
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.485.147 [mindspore/ccsrc/plugin/device/cpu/hal/hardware/cpu_device_context.cc:397] PreprocessBeforeRun] Status record: end preprocess before run graph. graph id: 3
+[INFO] VM(160609,7fba307c4280,python):2024-02-26-16:09:11.485.251 [mindspore/ccsrc/backend/graph_compiler/backend.cc:1333] RunOp] RunOp start ZerosLike
+[INFO] VM(160609,7fba307c4280,python):2024-02-26-16:09:11.485.708 [mindspore/ccsrc/backend/graph_compiler/backend.cc:1333] RunOp] RunOp start TensorScatterUpdate
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.772 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:126] CommonUnifyMindIR] start common unify mindir opt graph:4
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.798 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_0_conv_transpose_to_conv_backprop_input in 12.162 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.812 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_1_custom_op_reg_info_to_attr in 6.387 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.822 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_2_inplace_assign_for_custom_op in 4.613 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.834 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_3_convert_attr_to_unify_mindir in 6.293 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.864 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:126] CommonUnifyMindIR] start common unify mindir opt graph:4
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.888 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_0_conv_transpose_to_conv_backprop_input in 8.017 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.899 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_1_custom_op_reg_info_to_attr in 4.993 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.909 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_2_inplace_assign_for_custom_op in 4.267 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.920 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_common_unify_mindir_pm_3_convert_attr_to_unify_mindir in 5.321 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.941 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:90] OpBackendCommonOptimization] Status record: start op common optimization. graph id: 4
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.977 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_op_common_pm_0_reduce_optimizer in 17.37 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.485.990 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_op_common_pm_1_convert_const_input_to_tensor_input in 6.137 us
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.486.008 [mindspore/ccsrc/backend/common/optimizer/common_backend_optimization.cc:99] OpBackendCommonOptimization] Status record: end op common optimization. graph id: 4
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.486.024 [mindspore/ccsrc/kernel/oplib/oplib.cc:467] FindOp] FindOp failed: opname: TensorScatterUpdate, imply_type: CPU, current op num: 876 is_dynamic_shape:0
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.486.030 [mindspore/ccsrc/plugin/device/cpu/hal/device/kernel_select_cpu.cc:593] SetKernelInfoWithMsg] SetKernelInfo, CNode Name: TensorScatterUpdate
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.486.055 [mindspore/ccsrc/plugin/device/cpu/hal/device/kernel_select_cpu.cc:617] SetKernelInfoWithMsg] Input format and dtype is matched
+[INFO] PRE_ACT(160609,7fba307c4280,python):2024-02-26-16:09:11.486.091 [mindspore/ccsrc/backend/common/optimizer/pass_manager.cc:101] RunPass] Run pass hwopt_pm_0_insert_cast_cpu in 14.312 us
+[INFO] KERNEL(160609,7fba307c4280,python):2024-02-26-16:09:11.486.215 [mindspore/ccsrc/kernel/akg/akg_kernel_build.cc:644] AkgKernelParallelBuild] There is no akg kernel to be compiled.
+[INFO] DEVICE(160609,7fba307c4280,python):2024-02-26-16:09:11.486.221 [mindspore/ccsrc/plugin/device/cpu/hal/hardware/cpu_device_context.cc:397] PreprocessBeforeRun] Status record: end preprocess before run graph. graph id: 4
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.486.356 [mindspore_federated/fl_arch/ccsrc/common/fl_context.cc:113] set_http_server_address] Http server address is:192.168.199.162:9022
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.494.874 [mindspore_federated/fl_arch/ccsrc/common/fl_context.cc:53] set_server_mode] Server mode: FEDERATED_LEARNING is used for Server and Worker. Scheduler will ignore it.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.494.902 [mindspore_federated/fl_arch/ccsrc/common/core/yaml_config.cc:148] InitUnsupervisedConfig] cluster_client_num is 0, eval_type is NOT_EVAL
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.494.913 [mindspore_federated/fl_arch/ccsrc/common/core/yaml_config.cc:195] InitCompressionConfig] upload_compress_type is NO_COMPRESS, upload_sparse_rate is 1e-05, download_compress_type is NO_COMPRESS
+{'app_emb': array([[ 0.        ,  0.        ,  0.        , ...,  0.        ,
+         0.        ,  0.        ],
+       [ 0.09858795, -0.04556501, -0.07764099, ..., -0.02488814,
+        -0.00277951, -0.03710751],
+       [ 0.01190932,  0.021836  , -0.0337377 , ...,  0.05053309,
+        -0.01802705, -0.01512818],
+       ...,
+       [ 0.00644287,  0.17159103,  0.01339715, ..., -0.18169843,
+         0.05773884, -0.07405756],
+       [-0.12045158,  0.05936817,  0.01534479, ...,  0.02592995,
+        -0.00999838,  0.08525955],
+       [ 0.0994239 , -0.07015469,  0.01754922, ..., -0.01521091,
+         0.06108641, -0.03865629]], dtype=float32), 'user_emb': array([[ 0.00471458, -0.00195553,  0.00364719, ...,  0.00953008,
+         0.00131747, -0.00339711],
+       [ 0.00901452, -0.00057158, -0.00065824, ..., -0.00113754,
+        -0.00287095, -0.00882871],
+       [-0.00087651, -0.00526946, -0.0003496 , ..., -0.00028524,
+        -0.01002894,  0.00641656],
+       ...,
+       [ 0.00416232, -0.0024618 , -0.00430973, ..., -0.00118889,
+        -0.00214345,  0.0012405 ],
+       [ 0.00143687, -0.00260971, -0.00139064, ...,  0.00166191,
+        -0.00916256, -0.00203124],
+       [-0.0036848 , -0.00983482,  0.00282464, ..., -0.00222363,
+         0.00047674, -0.00138468]], dtype=float32), 'country_emb': array([[ 7.49844238e-02, -1.62291266e-02, -5.82697093e-02,
+         4.70820777e-02, -1.27419442e-01,  1.64754055e-02,
+         5.98557815e-02,  9.49968621e-02, -1.10265173e-01,
+        -1.70361534e-01, -1.38987556e-01, -2.88158327e-01,
+        -1.40984312e-01,  1.83754131e-01, -2.11171225e-01,
+        -3.19201872e-02, -1.61625788e-01, -1.09238692e-01,
+        -3.63333188e-02,  1.66821480e-01,  1.40537307e-01,
+        -8.98699909e-02, -1.06211156e-01,  1.06766191e-03,
+        -1.98224291e-01, -1.29615096e-02, -1.61114827e-01,
+         1.40142068e-01, -2.55178362e-01, -6.28564954e-02,
+        -1.38378711e-02,  4.47202697e-02, -2.58365134e-03,
+        -1.52164670e-02,  3.76938581e-01,  5.17829973e-03,
+        -1.06992215e-01, -7.54215866e-02, -1.38680458e-01,
+         2.50342693e-02, -5.70857264e-02, -7.58373290e-02,
+         2.16662902e-02,  7.16228485e-02, -9.81207844e-03,
+         9.04166996e-02, -1.41683817e-01,  1.77078128e-01,
+         2.24673569e-01, -7.68059343e-02, -2.02519193e-01,
+         3.45605426e-02,  9.06296074e-02,  6.88265823e-03,
+         2.45905191e-01,  1.05750397e-01,  1.32626206e-01,
+         3.63650955e-02,  2.09203035e-01,  1.40015841e-01,
+        -5.41277695e-03, -4.68719266e-02, -9.78178754e-02,
+        -8.12786371e-02, -1.10723220e-01, -6.14842959e-02,
+        -5.35550341e-02,  1.21895626e-01, -2.37529859e-01,
+         1.23358369e-01,  3.34425449e-01,  1.04908392e-01,
+        -2.21025478e-02,  2.81776190e-02, -2.45553814e-02,
+        -1.07844338e-01, -7.52699375e-02,  1.45194829e-01,
+         5.74232712e-02, -1.56218976e-01,  2.71415357e-02,
+         1.69801302e-02,  1.33662364e-02, -2.38634720e-02,
+         1.51827082e-01, -2.15728998e-01,  1.21828862e-01,
+        -1.88493151e-02,  2.97616795e-02,  3.99071984e-02,
+        -2.27921203e-01,  2.01346263e-01, -3.65601154e-03,
+         1.83002744e-02,  5.49719706e-02,  6.36207610e-02,
+         8.88987556e-02,  6.89721033e-02, -1.01077899e-01,
+        -1.62321657e-01],
+       [-4.28764820e-02,  6.52186805e-03, -6.51213229e-02,
+        -3.85443360e-01, -2.18400862e-02, -1.09815225e-02,
+        -1.54164806e-02,  9.34714004e-02, -2.09767088e-01,
+        -1.13657266e-01,  4.50646579e-02,  1.00783326e-01,
+        -1.61043316e-01, -1.26903549e-01, -1.36389226e-01,
+        -9.37283114e-02, -1.66429460e-01,  3.68422605e-02,
+        -4.82316762e-02, -7.10985810e-02, -1.27194241e-01,
+        -5.61595112e-02,  1.03901386e-01,  1.77801356e-01,
+         1.10762008e-02,  1.69418395e-01,  1.42598554e-01,
+         2.38695547e-01, -2.91539058e-02,  4.15640436e-02,
+         6.84125815e-03,  1.19401373e-01,  2.02721566e-01,
+         8.32087547e-02, -2.13556319e-01,  1.76765978e-01,
+         2.20775783e-01, -1.44704685e-01, -4.99296486e-02,
+         8.51397663e-02,  1.75019652e-01,  1.66932970e-01,
+         6.99342415e-02, -2.34596878e-02, -1.98193826e-02,
+        -2.13555425e-01, -1.09257422e-01,  1.83265790e-01,
+         5.24591431e-02, -6.89597335e-03, -6.38327003e-02,
+         4.96658459e-02, -1.58203676e-01, -1.40267819e-01,
+        -1.33841887e-01,  4.03386839e-02, -2.88357019e-01,
+        -7.74276629e-02, -1.38461724e-01,  1.92339584e-01,
+        -2.30663612e-01, -1.58447009e-02, -1.43126827e-02,
+         1.07407495e-02,  2.17561245e-01, -2.73845922e-02,
+        -1.52518272e-01, -5.67921624e-03,  1.73198014e-01,
+        -1.26390876e-02, -2.94985324e-01, -1.72979668e-01,
+         3.32966328e-01,  1.93748951e-01,  4.86042723e-02,
+        -1.82083890e-01,  1.21934280e-01, -1.01723738e-01,
+         1.86812446e-01, -3.12987007e-02,  9.57916453e-02,
+         1.33436427e-01, -2.24988744e-01, -5.96088208e-02,
+         6.99874014e-04, -1.85959324e-01, -6.23516217e-02,
+        -7.71833137e-02, -8.31155851e-02,  6.70069903e-02,
+         8.88966471e-02,  1.45915359e-01,  5.67977168e-02,
+         8.28254223e-02,  5.55931255e-02,  7.67855197e-02,
+        -1.87461451e-01,  1.10626481e-02,  1.33446559e-01,
+         5.21939471e-02],
+       [-2.92741448e-01,  5.68555295e-02,  8.71323943e-02,
+         7.91086480e-02, -7.49780461e-02, -1.67243496e-01,
+        -1.94585577e-01, -4.34179865e-02, -3.77886415e-01,
+         1.34284154e-01,  1.30795613e-01,  7.42593557e-02,
+         2.28213608e-01,  1.71743184e-01, -4.36752550e-02,
+        -6.23341613e-02,  9.44082960e-02,  2.53462493e-02,
+        -8.07258338e-02, -3.74291949e-02, -2.89462153e-02,
+        -1.06361344e-01, -5.87029383e-02,  4.80776019e-02,
+        -1.59087658e-01,  1.53595746e-01, -7.63932616e-02,
+         5.24717011e-02,  5.10009266e-02, -3.33800316e-02,
+        -1.02093056e-01, -3.51897888e-02, -5.38496226e-02,
+         1.22380897e-01,  3.34883109e-02,  5.37685193e-02,
+        -1.74168974e-01,  6.08053543e-02,  6.95760623e-02,
+        -1.14709154e-01,  1.74463093e-01, -6.96353242e-02,
+        -1.69291813e-02, -9.36660841e-02,  1.93261653e-01,
+         2.84401417e-01, -9.27307010e-02, -2.15851262e-01,
+        -5.05507179e-03,  7.20782056e-02, -2.61336751e-03,
+         8.81269202e-02, -2.02433884e-01,  1.58575907e-01,
+        -2.00040508e-02,  1.28963977e-01, -6.14471734e-02,
+         7.52120018e-02, -7.89624974e-02, -2.14659840e-01,
+         2.02215780e-02,  1.90353096e-01,  2.88833678e-01,
+        -2.66116679e-01,  9.85973608e-03,  6.03125319e-02,
+        -6.57663960e-03,  2.09758207e-01, -4.03321572e-02,
+        -1.83287099e-01,  1.10279366e-01, -2.09788918e-01,
+        -2.09238499e-01, -1.22389100e-01,  2.19192579e-01,
+        -2.24614695e-01, -2.03551725e-01,  1.05539411e-01,
+         6.47945181e-02, -1.04186341e-01, -1.79225914e-02,
+         3.89277469e-03,  6.13436941e-03,  1.02086380e-01,
+         8.75363648e-02, -4.94356751e-02, -2.99820334e-01,
+         1.63563769e-02, -1.05804332e-01,  2.90388782e-02,
+        -1.24451354e-01, -2.08312526e-01, -2.36003175e-01,
+         5.14937565e-02,  1.65353045e-01,  1.48022264e-01,
+         1.87055558e-01, -1.69308081e-01,  1.25715166e-01,
+        -3.69751938e-02],
+       [-8.90668780e-02, -5.74211497e-03, -2.50055462e-01,
+         3.61119993e-02, -4.46312837e-02, -6.69330433e-02,
+        -2.23278984e-01, -2.57291291e-02, -1.72326744e-01,
+        -1.35855516e-02, -1.58818796e-01,  1.29566282e-01,
+        -2.33601853e-01,  1.39246151e-01,  1.14901420e-02,
+         2.01806739e-01, -2.79317498e-01, -1.41486883e-01,
+        -8.08985680e-02,  2.55509794e-01, -1.31766945e-01,
+        -2.33358350e-02, -3.63897979e-02, -6.33268431e-02,
+        -1.28481269e-01, -1.63034722e-02,  4.62076403e-02,
+         1.17514536e-01, -7.38654286e-02, -8.55670124e-02,
+         3.35930437e-02,  2.48221338e-01, -2.68489540e-01,
+        -1.41805768e-01, -6.20791577e-02, -7.05745220e-02,
+         7.60444105e-02,  4.34117243e-02, -1.94088206e-01,
+         4.52411547e-02, -1.63045749e-02, -3.58338475e-01,
+        -7.43438769e-03,  5.26242927e-02,  7.10115805e-02,
+        -2.38517672e-01, -1.25364676e-01, -9.61457863e-02,
+         2.34283492e-01, -1.85723193e-02, -2.14616239e-01,
+        -4.90905792e-02, -4.22160514e-02,  1.27432123e-01,
+         1.31484587e-02,  5.10953330e-02, -1.94272727e-01,
+         1.61425509e-02,  1.09650888e-01,  6.66511357e-02,
+        -2.51974985e-02,  2.30734110e-01,  1.30705252e-01,
+         2.95875650e-02, -4.20231633e-02,  2.94464752e-02,
+         3.16284932e-02,  2.26528030e-02, -1.29001886e-02,
+         1.06872402e-01,  3.00129801e-02, -9.81967151e-02,
+         2.57621855e-01,  2.27487326e-01, -1.65677331e-02,
+         7.62734981e-03,  2.62087993e-02, -3.31013985e-02,
+         3.43451761e-02,  1.48530722e-01,  1.48158520e-01,
+         3.17585468e-01,  2.94723541e-01, -2.93622881e-01,
+        -1.78320929e-02,  3.78705822e-02,  2.14136079e-01,
+         8.73924568e-02, -6.26247153e-02, -5.06956317e-02,
+        -1.15230523e-01, -6.19295053e-02,  2.60434598e-01,
+        -4.85301726e-02,  2.24724844e-01,  5.41122966e-02,
+         2.33887315e-01,  1.78918868e-01, -1.35880697e-03,
+         6.30817786e-02],
+       [ 2.61370447e-02, -2.00189953e-03,  4.78651449e-02,
+         1.10735290e-01,  4.20085452e-02,  8.45111236e-02,
+        -1.91935554e-01,  1.41449779e-01,  3.81629206e-02,
+        -3.11429240e-02,  2.36195344e-02,  2.36756608e-01,
+         4.12504554e-01,  1.00655600e-01,  9.53531936e-02,
+         1.18010119e-01,  2.01238900e-01,  2.84410268e-01,
+         1.61642954e-01, -3.23752910e-02,  5.41874615e-05,
+        -2.38214120e-01,  1.95747837e-01,  1.59872726e-01,
+         1.12991773e-01, -1.20003954e-01, -3.40224773e-01,
+         1.27155138e-02,  2.33378932e-01,  5.59395179e-02,
+         9.95187461e-02,  7.59791955e-02,  7.13158101e-02,
+        -9.26209465e-02, -1.18268177e-01, -1.65026691e-02,
+        -2.11243004e-01,  2.45729208e-01,  2.88803428e-01,
+         9.04429406e-02,  4.41228412e-02,  2.37696543e-01,
+         1.37617573e-01,  2.26507679e-01,  1.97153404e-01,
+        -7.14712366e-02,  3.90305594e-02,  9.42125246e-02,
+         1.11611389e-01, -2.41799634e-02, -2.23985255e-01,
+         8.81987214e-02,  1.14621647e-01, -1.84310481e-01,
+        -1.76885173e-01,  2.27916986e-01,  1.87650174e-01,
+         1.31521225e-01,  7.86213055e-02,  4.73090773e-03,
+        -2.57421583e-02,  8.29520577e-05, -7.59903714e-02,
+         1.48121536e-01,  1.37028530e-01, -4.80086952e-02,
+         3.17587614e-01, -3.28926779e-02, -1.57186285e-01,
+        -1.20553508e-01,  1.09202430e-01, -2.93769855e-02,
+        -1.55244768e-01, -3.54559496e-02,  6.43096343e-02,
+         2.86363848e-02,  1.10801540e-01, -5.68350255e-02,
+         9.48218107e-02, -2.05618829e-01, -8.93475041e-02,
+        -2.02114403e-01, -1.27657712e-01, -3.55141200e-02,
+         9.65376049e-02,  6.23721220e-02, -1.28269985e-01,
+         2.46905133e-01,  5.90851232e-02,  2.41171569e-01,
+         6.92589134e-02, -1.98418424e-02, -1.58659711e-01,
+         1.61994435e-02,  5.15026636e-02, -4.11508828e-02,
+        -2.11394817e-01,  3.30433319e-03,  6.69586957e-02,
+        -1.12781338e-01],
+       [ 2.51540150e-02, -1.01659894e-01, -3.96036088e-01,
+         1.66348293e-02, -6.65618433e-03,  6.32096902e-02,
+         3.11827481e-01,  3.02280057e-02,  1.31542012e-01,
+        -1.16842061e-01, -7.80924261e-02, -1.47787333e-01,
+        -1.94013789e-02, -1.02916665e-01, -8.41570795e-02,
+        -1.58082739e-01, -1.20814972e-01,  3.61524411e-02,
+         1.34560376e-01, -1.21600963e-01,  5.06317280e-02,
+        -2.37206854e-02,  4.68037464e-02, -1.26141980e-01,
+        -7.15814158e-02,  9.59882289e-02, -8.65369514e-02,
+        -1.05568513e-01, -4.67980616e-02,  2.46203929e-01,
+         2.53045022e-01, -1.34098217e-01,  2.23205723e-02,
+         4.54004593e-02,  1.44188926e-01, -5.68696558e-02,
+        -1.37898356e-01, -3.04540657e-02,  2.00789552e-02,
+         2.13921517e-01, -3.54135409e-02,  1.32610604e-01,
+         4.80110338e-03,  2.65159518e-01, -1.01451389e-01,
+        -7.49744177e-02, -4.22678478e-02,  2.71916594e-02,
+         6.63828999e-02,  1.40399441e-01, -6.58707693e-02,
+        -9.20180697e-03, -2.50068069e-01, -1.06511191e-01,
+         1.71220496e-01,  8.33901539e-02,  2.29084611e-01,
+        -8.03926438e-02, -7.68828467e-02,  3.21018621e-02,
+        -3.14131901e-02, -1.33928120e-01,  3.84206772e-02,
+        -8.08042735e-02, -1.78481489e-01,  6.21990673e-02,
+         5.46583012e-02,  3.89350317e-02, -1.87535137e-01,
+         7.36446381e-02, -2.29063332e-01,  4.52631004e-02,
+        -1.60071272e-02, -2.22708911e-01,  1.19137019e-01,
+        -1.22873336e-01,  2.59806216e-01,  2.55216330e-01,
+         5.54619282e-02,  1.69593275e-01,  2.60717720e-01,
+        -2.20677093e-01,  5.84356710e-02, -7.92748630e-02,
+        -5.47052212e-02,  7.27845803e-02, -2.17773333e-01,
+         4.55017351e-02,  3.69155547e-03,  2.11355481e-02,
+        -4.50506285e-02, -2.01416656e-01, -9.62493271e-02,
+         9.22175050e-02,  1.04174718e-01,  4.55653369e-02,
+         2.18562335e-01,  1.17656821e-03, -2.44405661e-02,
+        -1.55192450e-01],
+       [-1.23459496e-01,  1.79114401e-01,  1.61282178e-02,
+         2.57022064e-02,  1.19138300e-01,  8.33445415e-02,
+        -1.87755495e-01,  2.92483032e-01,  2.42588576e-03,
+        -9.00649875e-02,  2.37124428e-01,  1.57359093e-01,
+        -1.38478354e-01, -6.93769529e-02, -1.71895593e-01,
+         2.86017749e-02,  3.42220068e-02,  6.42905682e-02,
+        -2.72853941e-01,  8.12051520e-02, -2.50938565e-01,
+        -8.42510760e-02,  1.08073592e-01,  4.42720717e-03,
+         1.69497818e-01, -1.78993464e-01,  2.80621588e-01,
+        -6.48090541e-02,  7.87900835e-02, -1.61613733e-01,
+        -7.32394531e-02, -1.99855387e-01, -1.52940094e-01,
+        -1.78799331e-01,  1.35790128e-02, -5.12643941e-02,
+         1.11729681e-01,  1.95108056e-01,  1.12270601e-01,
+         1.23645373e-01, -1.89944990e-02, -1.50255442e-01,
+         8.74830037e-03,  4.03538309e-02,  8.08235109e-02,
+        -1.83649361e-01, -2.34260294e-03, -3.32493097e-01,
+        -5.58633581e-02,  8.33515227e-02,  8.83065686e-02,
+        -3.30358297e-02,  7.20462576e-03,  2.57636458e-01,
+         1.60650149e-01, -6.33341968e-02, -3.71369988e-01,
+         6.49366900e-02, -2.53921062e-01,  8.02319944e-02,
+         2.60173202e-01,  1.92035750e-01, -2.30244040e-01,
+         1.18483752e-02, -7.12444559e-02, -4.37656455e-02,
+        -1.81921676e-01, -4.59903181e-02, -2.09970698e-01,
+         1.26241863e-01,  2.22408604e-02, -3.15203965e-02,
+         1.32825181e-01, -8.04624185e-02, -1.60430625e-01,
+        -1.40649468e-01, -4.27590497e-02,  2.17291489e-02,
+        -1.76190868e-01,  4.97342162e-02, -8.45993811e-04,
+        -8.92325044e-02, -3.77277508e-02, -1.44909978e-01,
+         1.98980644e-01,  8.62488225e-02, -1.30922019e-01,
+        -2.58503892e-02,  7.92358965e-02, -2.21235976e-01,
+        -2.25738660e-01,  6.43116385e-02, -2.15457007e-02,
+         4.48596440e-02,  3.68910991e-02, -6.21725433e-02,
+         2.30648778e-02,  1.89418390e-01,  8.29992369e-02,
+         4.59514931e-02],
+       [-1.63324162e-01,  2.04920560e-01, -9.84182209e-02,
+         1.04227252e-01,  6.97234869e-02,  5.33585213e-02,
+        -8.46348852e-02, -4.74585705e-02,  1.11338198e-01,
+        -1.32963145e-02,  1.09344713e-01, -1.27723068e-01,
+         1.90218389e-01,  3.43751162e-02, -1.71890527e-01,
+        -1.53091908e-01,  1.06438801e-01, -2.68135294e-02,
+        -4.35479358e-03, -7.59816617e-02,  2.94434965e-01,
+        -4.24072370e-02,  2.21684366e-01,  1.52016303e-03,
+         2.34855413e-01,  3.03736981e-02, -2.56923676e-01,
+         1.53370976e-01,  1.56937703e-01, -4.52679694e-02,
+        -2.43277267e-01, -9.71906781e-02,  7.40079731e-02,
+        -1.34090409e-01, -1.13549992e-01, -2.45432079e-01,
+        -7.86170810e-02, -9.36274156e-02, -4.28441502e-02,
+         1.59022167e-01, -4.25239615e-02, -6.07374683e-02,
+         9.12073404e-02, -5.02977893e-02,  6.34268373e-02,
+        -1.18689425e-01, -4.03412551e-01,  9.09087285e-02,
+         2.24341564e-02,  1.62245721e-01,  1.35745183e-01,
+         2.33577937e-02,  1.20915011e-01, -2.34800965e-01,
+         9.12550092e-02, -2.27567665e-02, -5.30440956e-02,
+         7.82523081e-02,  4.29960229e-02, -7.91501254e-03,
+        -4.10750918e-02,  7.41353557e-02, -2.27092370e-01,
+        -1.31985113e-01,  4.94816378e-02, -4.00131047e-02,
+        -7.42977336e-02,  1.34129554e-01,  3.72526050e-02,
+        -8.72175321e-02,  3.02453469e-02,  6.80887699e-02,
+         1.10739075e-01, -1.73822731e-01, -1.26131356e-01,
+        -1.90505818e-01, -3.74615818e-01, -2.83199817e-01,
+         3.42074409e-02,  2.94070505e-02,  2.72037357e-01,
+        -2.86964357e-01,  2.29943499e-01, -9.87807289e-02,
+        -8.22154954e-02, -1.99288633e-02,  2.34468933e-03,
+        -5.57436841e-03,  1.79350749e-01, -1.04985878e-01,
+         2.68403697e-03,  1.08507030e-01,  2.28339121e-01,
+         1.91681255e-02, -1.46017492e-01, -2.02690214e-01,
+         1.09228268e-01,  4.33214568e-02,  1.43775553e-01,
+         2.86549419e-01]], dtype=float32), 'device_emb': array([[ 1.97137473e-04,  5.79328910e-02,  1.90175753e-02, ...,
+        -2.53794268e-02, -3.40251327e-02,  4.32632752e-02],
+       [ 9.68523845e-02, -1.21759195e-02, -1.14621058e-01, ...,
+         8.06849450e-03, -6.88921139e-02,  8.16551000e-02],
+       [-1.30507559e-01,  1.01652183e-01, -1.04529940e-01, ...,
+         8.63747485e-03,  3.38611044e-02, -3.98407169e-02],
+       ...,
+       [ 1.11983754e-01,  1.69911012e-01, -3.95251364e-02, ...,
+         5.48140630e-02,  3.58665660e-02,  1.36451498e-01],
+       [-6.34213239e-02,  9.03348962e-04,  2.45831475e-01, ...,
+        -6.04390167e-02,  6.91529363e-02,  1.73155949e-01],
+       [ 1.91563576e-01,  1.89799406e-02,  2.01972917e-01, ...,
+        -2.09205538e-01,  1.84421577e-02,  7.68373236e-02]], dtype=float32), 'class_emb': array([[ 0.        ,  0.        ,  0.        , ...,  0.        ,
+         0.        ,  0.        ],
+       [-0.04666953, -0.13834214,  0.24671423, ...,  0.04360413,
+        -0.31085092,  0.06177647],
+       [-0.19328119,  0.14127956, -0.01534973, ...,  0.05434299,
+         0.05736235, -0.09513655],
+       ...,
+       [ 0.03254443,  0.07567593, -0.09550805, ...,  0.11217642,
+        -0.05558248, -0.07129168],
+       [-0.10734317,  0.11145568,  0.09307743, ..., -0.20144494,
+        -0.07917658, -0.29420993],
+       [-0.08645645, -0.06214062,  0.17553936, ..., -0.33096197,
+         0.25676602, -0.19987775]], dtype=float32), 'max_count_emb': array([[[-0.03220436,  0.06817389,  0.00728609, -0.04962019,
+          0.13040997, -0.03718866, -0.00337885, -0.06982341,
+         -0.00644328, -0.06791677, -0.08836216,  0.02171617,
+          0.21127488, -0.13184682, -0.13714793, -0.07219032,
+          0.0892133 ,  0.06439291,  0.02501602, -0.02083774,
+         -0.05223998,  0.05527725, -0.06843576,  0.11306447,
+         -0.13252218,  0.00594557,  0.01181416,  0.04537817,
+          0.03902611,  0.02718611,  0.08795907, -0.02211043,
+          0.06361499, -0.06371955, -0.09454793,  0.1806    ,
+          0.06477331, -0.03962751,  0.03995408, -0.04810625,
+         -0.02752247,  0.06147028,  0.08600103, -0.03420708,
+          0.13757889, -0.11393123,  0.05503621, -0.03028985,
+          0.04356387,  0.19084804,  0.08146936, -0.0535477 ,
+         -0.02091622,  0.1887203 , -0.14417201,  0.04644539,
+          0.02264187, -0.10280903,  0.01879166, -0.01262884,
+         -0.12711509,  0.06005248,  0.14448944, -0.04040122,
+          0.25943792, -0.19268663,  0.15053886,  0.05796875,
+          0.17682011,  0.04683792,  0.00173652,  0.14159176,
+          0.01229357,  0.07309848,  0.0845337 , -0.1117541 ,
+         -0.0999531 , -0.1430737 ,  0.0517549 ,  0.08093543,
+          0.08681843,  0.02447335,  0.10086495,  0.01291124,
+          0.02700788,  0.06840676,  0.16078775, -0.04355883,
+         -0.01693643, -0.00065458, -0.01666251, -0.07389897,
+         -0.11862259, -0.03568183,  0.07266656,  0.01181905,
+          0.01777283, -0.14646931,  0.06116566, -0.12794273]]],
+      dtype=float32), 'min_count_emb': array([[[-0.19383815, -0.15952662, -0.12630926, -0.17478396,
+          0.1764003 , -0.08708958, -0.13241643, -0.18202884,
+          0.03584289, -0.02156575,  0.16361304,  0.1157844 ,
+          0.18663484,  0.09702833,  0.1416713 , -0.2755322 ,
+         -0.03342271,  0.11311062,  0.0065651 ,  0.14833374,
+          0.14480512,  0.0476635 , -0.01521119, -0.1782308 ,
+          0.13130648, -0.00355244,  0.15644443, -0.06154702,
+         -0.18876581,  0.00192312,  0.01543518,  0.12424567,
+          0.00030626, -0.1451122 ,  0.13919617, -0.05290398,
+          0.07419831, -0.04771921,  0.04790062,  0.06417137,
+          0.04654748, -0.10339738,  0.05064797,  0.03442988,
+         -0.20213376, -0.20008205, -0.0168532 , -0.08229962,
+          0.0082522 ,  0.06328396,  0.23413426,  0.02887468,
+          0.08589355, -0.0538268 ,  0.05031264,  0.09195438,
+         -0.04414823, -0.02063066,  0.05206876, -0.06665727,
+          0.09870206,  0.10767677, -0.03950997, -0.16532326,
+         -0.10583302,  0.12479652,  0.20285876, -0.03050279,
+          0.00312092,  0.23342685,  0.00115744,  0.14598426,
+          0.01876759, -0.05536764,  0.14475659,  0.01856762,
+         -0.19736212,  0.10255536,  0.16834852,  0.0308205 ,
+          0.02121893, -0.05827965,  0.04163097,  0.11898065,
+          0.03385567,  0.06691484,  0.08549775, -0.01173582,
+         -0.07116012, -0.01066713, -0.15970083, -0.03830219,
+         -0.19690627,  0.13537595,  0.15440588,  0.12828128,
+          0.03260449,  0.03749629,  0.04268553,  0.03542795]]],
+      dtype=float32), 'max_time_emb': array([[[ 5.29377647e-02,  3.70005034e-02,  3.19169722e-02,
+          9.39921215e-02,  7.40885362e-02,  4.98727709e-02,
+          6.78450316e-02, -5.09735905e-02, -1.21013083e-01,
+         -2.90904436e-02,  1.54244825e-01, -1.07111745e-01,
+         -5.94939999e-02,  2.18650490e-01,  4.46850359e-02,
+         -1.21220134e-01,  9.29163396e-02, -8.45996514e-02,
+          1.75062213e-02, -5.12605272e-02,  6.57621399e-02,
+          1.46562159e-01,  1.23527162e-01, -1.57575291e-02,
+          6.16531931e-02, -3.26432250e-02, -1.02179080e-01,
+          2.87140328e-02, -2.97881234e-02,  8.76231119e-02,
+         -2.99669784e-02,  2.01396421e-02,  1.81349590e-02,
+         -1.06917480e-02, -1.60304844e-01, -7.98156410e-02,
+         -3.81787233e-02,  1.48798302e-01, -6.20936379e-02,
+          9.78011414e-02,  9.16542262e-02, -1.88661292e-02,
+         -1.30077247e-02, -4.14535180e-02, -8.71950835e-02,
+         -4.69904132e-02, -1.00974860e-02, -1.25622913e-01,
+         -2.26811375e-02,  1.23453595e-01,  9.42067927e-05,
+         -1.48546994e-01, -7.29461107e-03,  3.75723536e-03,
+         -1.57788862e-03, -3.95620652e-02,  8.66081491e-02,
+         -1.28794730e-01,  1.45070493e-01,  2.84740254e-02,
+         -7.00289235e-02,  1.21251032e-01,  1.37145847e-01,
+         -2.01090821e-03, -6.98171854e-02, -5.06799854e-03,
+         -6.48201501e-04,  2.22417459e-01,  9.09295082e-02,
+         -6.34379014e-02,  9.36440751e-02,  1.57031074e-01,
+          4.67114374e-02, -8.18842500e-02, -1.31831378e-01,
+         -1.61751285e-02, -2.40681157e-03,  1.13999240e-01,
+         -9.00946036e-02, -9.06520709e-02,  1.14633481e-03,
+         -1.08203746e-01, -6.92701265e-02,  6.08197637e-02,
+          2.80812830e-02, -8.13396499e-02,  3.56439613e-02,
+          1.13113457e-02,  1.22203201e-03, -9.16340053e-02,
+         -2.45634437e-01, -7.80328512e-02, -9.40156356e-02,
+         -9.73956063e-02, -1.53418183e-01, -1.02717876e-02,
+          1.22462977e-02, -6.66910335e-02,  5.13029620e-02,
+          8.30294937e-02]]], dtype=float32), 'min_time_emb': array([[[ 0.13014251,  0.0282695 , -0.03399318, -0.09088784,
+          0.04974853, -0.06532096, -0.14831237, -0.06788352,
+          0.02019896,  0.02865825, -0.1450772 ,  0.02473854,
+         -0.08217081,  0.03084984, -0.13136524, -0.06059683,
+         -0.11794365, -0.19176973,  0.03575935, -0.06315632,
+         -0.0542493 ,  0.14118756,  0.01613983,  0.07908338,
+         -0.12269698,  0.01941916, -0.06449248,  0.0027659 ,
+         -0.1588485 , -0.14446366, -0.02941416,  0.09553582,
+         -0.18766822, -0.01458245,  0.11946122,  0.06784413,
+          0.07261825,  0.03798686,  0.03011672,  0.1567545 ,
+          0.07710959, -0.01902024,  0.05277975,  0.08961519,
+          0.02202523,  0.13502613, -0.05922982, -0.0204148 ,
+         -0.00177251,  0.00956358,  0.05722552,  0.07143541,
+          0.07277032,  0.1388778 , -0.04500307, -0.03814978,
+         -0.15253407, -0.13408057, -0.21696225, -0.05709096,
+         -0.01714678, -0.11101145,  0.0702637 , -0.0482147 ,
+         -0.05956743,  0.081214  ,  0.08006003, -0.10270752,
+          0.07365835, -0.10168716, -0.10826837, -0.19800761,
+         -0.21964522,  0.01264347,  0.04164995, -0.01454078,
+         -0.00361591, -0.16198099,  0.04874514, -0.16170716,
+         -0.05611186,  0.05494592,  0.06575876, -0.0672306 ,
+          0.1496601 ,  0.02002918, -0.0530087 ,  0.06690113,
+         -0.04383144,  0.22287595, -0.00448961, -0.03661673,
+         -0.00684757,  0.02608015,  0.02222716, -0.03970959,
+         -0.15838952, -0.05103773, -0.07064642, -0.07644887]]],
+      dtype=float32), 'Shared_Layer.0.weight': array([[-0.00812125,  0.00125677,  0.02060727, ..., -0.00773249,
+        -0.00199659,  0.0053243 ],
+       [-0.0127512 ,  0.00085471, -0.00457723, ...,  0.00909264,
+        -0.01251894,  0.00661973],
+       [ 0.00621203, -0.00349228, -0.00135526, ..., -0.01397755,
+        -0.01085752, -0.02529966],
+       ...,
+       [-0.00492272,  0.01620692, -0.00633565, ...,  0.01224215,
+         0.01078353, -0.02828686],
+       [ 0.00073619,  0.00593643, -0.00939274, ..., -0.00745009,
+        -0.00382051, -0.01670661],
+       [-0.00342242, -0.00220106,  0.0038054 , ...,  0.00278138,
+        -0.00967757,  0.0265642 ]], dtype=float32), 'Shared_Layer.0.bias': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0.], dtype=float32), 'Shared_Layer.2.weight': array([[ 0.01242305, -0.0074618 ,  0.02036022,  0.00639511, -0.02218773,
+        -0.00105015, -0.01087311, -0.00356323, -0.0040903 ,  0.00488584,
+        -0.00217228,  0.00817087,  0.01355882, -0.00620777,  0.01170528,
+        -0.00072608,  0.00874497,  0.00228351, -0.00964444,  0.01516967],
+       [-0.0124125 ,  0.00751651,  0.00753949, -0.01056554,  0.02837288,
+         0.01167326, -0.00463743,  0.01145257, -0.001376  , -0.00299335,
+        -0.00953328, -0.00504972,  0.00399066,  0.00650315,  0.00154111,
+         0.0004032 , -0.00330274, -0.00294546,  0.01246948, -0.0203105 ],
+       [-0.0011842 , -0.00053424, -0.00052689,  0.00312045, -0.00187445,
+        -0.00644215,  0.00344595,  0.00771588,  0.02019735,  0.00775754,
+         0.00216662, -0.02154242, -0.00448009,  0.00324206, -0.00364619,
+         0.01939231, -0.01904693,  0.0042528 ,  0.00236976, -0.0061438 ],
+       [-0.00535077, -0.00638163,  0.00750902, -0.01730753,  0.00833358,
+        -0.00122046, -0.00021333, -0.00068068, -0.01302608, -0.00178172,
+         0.0123797 ,  0.01854517, -0.01056821, -0.00496297,  0.00898029,
+        -0.00716559, -0.00105082,  0.0011113 ,  0.0076387 ,  0.00661979],
+       [ 0.01877674, -0.00283259, -0.01016482,  0.01065982,  0.0005025 ,
+         0.00287519, -0.0227167 ,  0.01187799, -0.00767339, -0.00566093,
+        -0.0139975 ,  0.01275469, -0.00161868,  0.00494348,  0.01109657,
+         0.01479152,  0.00867632,  0.00210338,  0.00925696, -0.00491654],
+       [ 0.01016863,  0.00185807, -0.01273538,  0.01002856,  0.0052902 ,
+         0.00490514,  0.00119715,  0.0081292 , -0.00048228, -0.00133913,
+        -0.01632228,  0.00487741, -0.00031954, -0.00010434, -0.01030379,
+        -0.00729459, -0.01013899,  0.00053627, -0.0030168 ,  0.01605555],
+       [ 0.00587029, -0.01355512,  0.00440371,  0.01714367, -0.00609103,
+        -0.00869003,  0.00592057, -0.00131447,  0.02193092,  0.00954194,
+        -0.01439732,  0.00210673,  0.00577228, -0.01412928, -0.00414628,
+        -0.01789564,  0.00601803, -0.00098512,  0.01158616,  0.00498419],
+       [ 0.00135478,  0.00374306, -0.00418257,  0.02723533,  0.00115026,
+         0.00469739, -0.00197121,  0.0149695 ,  0.00442091,  0.01118649,
+        -0.0043197 ,  0.00420967, -0.01421384, -0.00446115,  0.01507418,
+        -0.00125291,  0.00748162,  0.02969234,  0.00103688,  0.01454518],
+       [-0.0015206 ,  0.0049656 ,  0.00538755, -0.01257998,  0.00821312,
+         0.012766  ,  0.01915745,  0.00625089, -0.00961891, -0.00516337,
+        -0.00284422, -0.00224777,  0.00375917, -0.00473281,  0.01185643,
+         0.00707041,  0.00517283,  0.01359779,  0.01813603,  0.00639692],
+       [ 0.00288755, -0.01380809,  0.00036273,  0.00209672, -0.00425807,
+         0.00528299,  0.01018381,  0.02394855,  0.00958512, -0.00954521,
+         0.01763448, -0.00092019,  0.00961305, -0.01655841, -0.00161977,
+        -0.0225351 , -0.00998769, -0.00701872,  0.01644418,  0.00033057]],
+      dtype=float32), 'Shared_Layer.2.bias': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.], dtype=float32), 'App_Layers.0.weight': array([[-3.6555203e-03, -3.4713135e-03, -1.0465216e-02, -1.4247337e-02,
+         1.8601216e-02,  3.3609096e-03,  8.8553457e-03,  8.7107308e-03,
+        -5.5134962e-03, -1.2111029e-02],
+       [-7.2303088e-03,  7.5166393e-03, -1.1760003e-02, -2.1952081e-03,
+        -1.0483012e-02,  2.6436901e-04,  4.6561188e-03,  1.0132376e-02,
+         1.0064284e-02,  8.5922247e-03],
+       [-1.1204522e-02, -4.2969724e-03,  1.8484149e-03, -7.8311022e-03,
+         7.6988102e-03,  1.8396959e-04, -5.6005055e-03,  1.0449535e-02,
+        -1.4926124e-02,  7.1768197e-03],
+       [-2.9260477e-03, -2.0011650e-02,  1.5103078e-02,  8.3900606e-03,
+         5.8582291e-04, -3.5917112e-03, -5.3921225e-03, -1.1753853e-02,
+         5.0769292e-04, -1.9147322e-02],
+       [ 2.5571443e-02, -1.2484820e-02,  1.6193526e-03,  4.0386375e-03,
+         8.9359228e-03,  1.7761018e-03, -8.6003328e-03, -7.1603614e-03,
+         4.5717545e-03, -3.4629481e-03],
+       [ 2.6296261e-03,  1.0532353e-02, -1.2565842e-02,  4.1308175e-03,
+        -1.3964885e-03, -8.7673514e-04,  1.7245896e-03,  1.0131677e-02,
+        -4.1203769e-03, -1.9409150e-02],
+       [-3.3362084e-03, -1.8598848e-03, -8.4487030e-05,  1.2688108e-02,
+         1.8478455e-02, -2.5583995e-03,  9.0945307e-03, -2.1608630e-03,
+         1.1121488e-02, -4.8168409e-03],
+       [-9.6516907e-03, -1.6176492e-03, -3.5827064e-03,  1.8550179e-04,
+        -4.4932772e-04, -7.6355394e-03, -4.3808138e-03,  1.9337039e-02,
+         2.6942207e-03, -4.1128318e-03],
+       [ 4.4548875e-03,  3.8674674e-03,  1.2923094e-02,  7.4239555e-03,
+         4.8571937e-03, -7.3083728e-03,  5.4002507e-03,  1.5647328e-02,
+         8.3872080e-03,  3.2260541e-03],
+       [ 1.4263046e-02,  2.1011273e-03, -2.1059746e-03,  1.7495869e-02,
+        -9.7509734e-03, -1.1699525e-02, -1.2347127e-02,  4.6394328e-03,
+         6.6943411e-03, -3.6705940e-04]], dtype=float32), 'App_Layers.0.bias': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.], dtype=float32), 'Final_App_Layer.weight': array([[ 1.3048039e-03, -1.1797050e-02,  8.8203494e-03, ...,
+         1.2108084e-02, -1.2042100e-02, -5.9196830e-04],
+       [-3.1128544e-03,  1.3665776e-02, -4.2035566e-03, ...,
+         3.3555902e-03,  1.5800301e-02,  2.8271670e-02],
+       [ 2.3571339e-02, -5.5660806e-03, -3.1281941e-02, ...,
+         9.6389279e-03,  1.0919196e-02, -2.1059921e-02],
+       ...,
+       [ 6.8532857e-03,  4.2108226e-05, -1.1423293e-02, ...,
+        -1.3399567e-02, -1.7053550e-02,  7.8452341e-03],
+       [ 9.1082398e-03, -7.2348719e-03,  7.9533542e-03, ...,
+        -1.2372911e-02, -1.3257152e-02, -9.6639362e-04],
+       [ 1.7604984e-02,  1.2845689e-03, -1.6350230e-02, ...,
+         5.2655106e-03, -5.0000944e-03,  9.3861884e-03]], dtype=float32), 'Final_App_Layer.bias': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0.], dtype=float32)}[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.505.483 [mindspore_federated/startup/federated_local.py:304] Recovery ckpt files is: [(0, '220726164030', '/home/qiyijie/git_projects/mindspore/federated/example/cross_device_albert2/./fl_ckpt/MLP_recovery_iteration_0_220726_164030.ckpt')].
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.505.580 [mindspore_federated/startup/federated_local.py:33] load checkpoint file: /home/qiyijie/git_projects/mindspore/federated/example/cross_device_albert2/./fl_ckpt/MLP_recovery_iteration_0_220726_164030.ckpt
+[INFO] ME(160609:140437654094464,MainProcess):2024-02-26-16:09:11.505.663 [mindspore/train/serialization.py:704] Execute the process of loading checkpoint files.
+[INFO] ME(160609:140437654094464,MainProcess):2024-02-26-16:09:11.516.503 [mindspore/train/serialization.py:738] Loading checkpoint files process is finished.
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.516.765 [mindspore_federated/startup/federated_local.py:44] Weight name: app_emb, shape: [502, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.516.830 [mindspore_federated/startup/federated_local.py:44] Weight name: user_emb, shape: [93000, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.516.874 [mindspore_federated/startup/federated_local.py:44] Weight name: country_emb, shape: [8, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.516.914 [mindspore_federated/startup/federated_local.py:44] Weight name: device_emb, shape: [139, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.516.953 [mindspore_federated/startup/federated_local.py:44] Weight name: class_emb, shape: [28, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.516.991 [mindspore_federated/startup/federated_local.py:44] Weight name: max_count_emb, shape: [1, 1, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.030 [mindspore_federated/startup/federated_local.py:44] Weight name: min_count_emb, shape: [1, 1, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.067 [mindspore_federated/startup/federated_local.py:44] Weight name: max_time_emb, shape: [1, 1, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.104 [mindspore_federated/startup/federated_local.py:44] Weight name: min_time_emb, shape: [1, 1, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.142 [mindspore_federated/startup/federated_local.py:44] Weight name: Shared_Layer.0.weight, shape: [20, 70], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.178 [mindspore_federated/startup/federated_local.py:44] Weight name: Shared_Layer.0.bias, shape: [20], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.215 [mindspore_federated/startup/federated_local.py:44] Weight name: Shared_Layer.2.weight, shape: [10, 20], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.251 [mindspore_federated/startup/federated_local.py:44] Weight name: Shared_Layer.2.bias, shape: [10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.288 [mindspore_federated/startup/federated_local.py:44] Weight name: App_Layers.0.weight, shape: [10, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.325 [mindspore_federated/startup/federated_local.py:44] Weight name: App_Layers.0.bias, shape: [10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.362 [mindspore_federated/startup/federated_local.py:44] Weight name: Final_App_Layer.weight, shape: [502, 10], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.404 [mindspore_federated/startup/federated_local.py:44] Weight name: Final_App_Layer.bias, shape: [502], dtype: float32
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.427 [mindspore_federated/startup/federated_local.py:252] Load recovery checkpoint file /home/qiyijie/git_projects/mindspore/federated/example/cross_device_albert2/./fl_ckpt/MLP_recovery_iteration_0_220726_164030.ckpt successfully.
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.517.457 [mindspore_federated/startup/federated_local.py:317] Recovery iteration num is: 1.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.517.527 [mindspore_federated/fl_arch/ccsrc/common/fl_context.cc:76] set_ms_role] MS_ROLE of this node is MS_SERVER
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.518.971 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:142] Init] The max connection is:10000
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.520.478 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:51] CreateBufferEvent] SSL is disable.
+[INFO] FEDERATED(160609,7fb942ffd700,python):2024-02-26-16:09:11.520.735 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:175] NotifyConnected] Client connected to the server! Peer Server ip: 192.168.199.162, port: 41873
+[INFO] FEDERATED(160609,7fb9437fe700,python):2024-02-26-16:09:11.520.758 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:264] ListenerCallbackInner] SSL is disable.
+[INFO] FEDERATED(160609,7fb942ffd700,python):2024-02-26-16:09:11.520.770 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_client.cc:208] EventCallbackInner] Client connected! Peer Server ip: 192.168.199.162, port: 41873
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.520.782 [mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:337] InitNodeInfo] The node role:SERVER is generate uuid is:192.168.199.162:41873::2024-02-26-16:09:11.520.767::69383, the ip:192.168.199.162, the port:41873
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.520.799 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:31] InitializeBeforeCache] [Server start]: Server node create tcp server successful!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.520.808 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/redis/redis.cc:675] Init] Try connect to redis sever 127.0.0.1:23458, retry time in seconds 900
+[INFO] FEDERATED(160609,7fb9437fe700,python):2024-02-26-16:09:11.520.808 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_server.cc:300] ListenerCallbackInner] A client is connected, fd is 13
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.531 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/redis/redis.cc:689] Init] Connect to redis sever 127.0.0.1:23458 successfully
+[WARNING] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.787 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/instance_context.cc:430] SyncInner] Running status in distributed cache is empty
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.933 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:167] SyncLocal2Cache] Sync hyper params to cache success
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.940 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:89] SyncOnNewInstance] start_fl_job_threshold: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.943 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:90] SyncOnNewInstance] start_fl_job_time_window in ms: 4294967295
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.949 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:91] SyncOnNewInstance] update_model_ratio: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.952 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:92] SyncOnNewInstance] update_model_time_window in ms: 4294967295
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.959 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:93] SyncOnNewInstance] fl_iteration_num: 100
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.963 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:94] SyncOnNewInstance] client_epoch_num: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.966 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:95] SyncOnNewInstance] client_batch_size: 64
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.970 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:96] SyncOnNewInstance] client_learning_rate: 0.001
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.973 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/hyper_params.cc:97] SyncOnNewInstance] global_iteration_time_window in ms: 4294967295
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.526.979 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/server.cc:140] LockCache] Begin to lock server
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.527.020 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/server.cc:165] LockCache] Lock server successfully
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.527.025 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:149] ServerPingPong] Begin ping all other servers
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.527.062 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:169] ServerPingPong] Success receive pong message from servers: []
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.527.067 [mindspore_federated/fl_arch/ccsrc/common/fl_context.cc:105] GenerateResetterRound] Server context is 2. Resetter round is 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.527.071 [mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:220] GetOrCreateTcpComm] Create Tcp communicator.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.528.480 [mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:208] GetOrCreateHttpComm] Create Http communicator.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.528.701 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/model_info.cc:57] SyncLocal2Cache] Sync model info to cache success
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.528.714 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:267] GetModelWeight] Begin get model weight of iteration 0 from other servers
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.528.754 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:321] GetModelWeight] Failed to get model weight of iteration 0 from other servers
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.528.760 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:30] Initialize] Latest iteration num is 0
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.528.906 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is app_emb, weight byte size is 20080
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.574 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is user_emb, weight byte size is 3720000
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.581 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is country_emb, weight byte size is 320
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.585 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is device_emb, weight byte size is 5560
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.593 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is class_emb, weight byte size is 1120
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.597 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is max_count_emb, weight byte size is 40
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.601 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is min_count_emb, weight byte size is 40
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.605 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is max_time_emb, weight byte size is 40
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.608 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is min_time_emb, weight byte size is 40
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.612 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is Shared_Layer.0.weight, weight byte size is 5600
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.616 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is Shared_Layer.0.bias, weight byte size is 80
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.620 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is Shared_Layer.2.weight, weight byte size is 800
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.623 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is Shared_Layer.2.bias, weight byte size is 40
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.627 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is App_Layers.0.weight, weight byte size is 400
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.630 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is App_Layers.0.bias, weight byte size is 40
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.635 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is Final_App_Layer.weight, weight byte size is 20080
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.529.639 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:84] InitModel] Aggregate Weight full name is Final_App_Layer.bias, weight byte size is 2008
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.542.501 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:339] AssignNewCompressModelMemory] Register compressWeight for compressType: QUANT
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.543.268 [mindspore_federated/fl_arch/ccsrc/server/model_store.cc:43] Initialize] Model store checkpoint dir is: /home/qiyijie/git_projects/mindspore/federated/example/cross_device_albert2/./fl_ckpt/
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.544.426 [mindspore_federated/fl_arch/ccsrc/server/server.cc:611] SyncAndInitModel] Load model success: The initial local model is used as the model of iteration 0
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.541 [mindspore_federated/fl_arch/ccsrc/server/server.cc:158] InitRoundConfigs] Initializing cipher:
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.546 [mindspore_federated/fl_arch/ccsrc/server/server.cc:159] InitRoundConfigs]  exchange_keys_threshold: 1 get_keys_threshold: 1 share_secrets_threshold: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.551 [mindspore_federated/fl_arch/ccsrc/server/server.cc:162] InitRoundConfigs]  get_secrets_threshold: 1 get_client_list_threshold: 2 push_list_sign_threshold: 2 get_list_sign_threshold: 2 minimum_clients_for_reconstruct: 2 minimum_secret_shares_for_reconstruct: 1 cipher_time_window: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.559 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:64] InitIteration] Time window for one iteration is 8589934590
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.564 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round startFLJob, check_timeout: 1, time window: 4294967295, check_count: 1, threshold: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.568 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round startFLJob start initialize.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.581 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/timer.cc:157] RegisterTimer] Register timer for startFLJob, time length in seconds: 4294967
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.586 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/counter.cc:46] RegisterCounter] Register counter for startFLJob, threshold: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.590 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round startFLJob register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.594 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: startFLJob
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.599 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round startFLJob register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.602 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: startFLJob
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.852 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:9022/startFLJob
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.862 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round updateModel, check_timeout: 1, time window: 4294967295, check_count: 1, threshold: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.865 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round updateModel start initialize.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.869 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/timer.cc:157] RegisterTimer] Register timer for updateModel, time length in seconds: 4294967
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.873 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/counter.cc:66] RegisterPerServerCounter] Register counter(total count of all valid servers) for updateModel, threshold: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.877 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round updateModel register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.880 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: updateModel
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.883 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round updateModel register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.545.887 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: updateModel
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.119 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:9022/updateModel
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.181 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/counter.cc:66] RegisterPerServerCounter] Register counter(total count of all valid servers) for count_for_aggregation, threshold: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.189 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round getModel, check_timeout: 0, time window: 3000, check_count: 0, threshold: 0
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.192 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round getModel start initialize.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.196 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round getModel register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.199 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: getModel
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.202 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round getModel register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.205 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: getModel
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.438 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:9022/getModel
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.444 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round pullWeight, check_timeout: 0, time window: 3000, check_count: 0, threshold: 0
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.447 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round pullWeight start initialize.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.451 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pullWeight register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.454 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: pullWeight
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.457 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pullWeight register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.461 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: pullWeight
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.691 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:9022/pullWeight
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.697 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round pushWeight, check_timeout: 0, time window: 3000, check_count: 0, threshold: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.700 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round pushWeight start initialize.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.703 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pushWeight register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.707 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: pushWeight
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.710 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pushWeight register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.716 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: pushWeight
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.946 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:9022/pushWeight
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.952 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:69] InitIteration] Add round pushMetrics, check_timeout: 0, time window: 3000, check_count: 1, threshold: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.955 [mindspore_federated/fl_arch/ccsrc/server/round.cc:55] Initialize] Round pushMetrics start initialize.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.959 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/counter.cc:46] RegisterCounter] Register counter for pushMetrics, threshold: 1
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.962 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pushMetrics register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.965 [mindspore_federated/fl_arch/ccsrc/common/communicator/tcp_communicator.cc:52] RegisterRoundMsgCallback] msg_type is: pushMetrics
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.968 [mindspore_federated/fl_arch/ccsrc/server/round.cc:49] RegisterMsgCallBack] Round pushMetrics register message callback.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.546.972 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_communicator.cc:23] RegisterRoundMsgCallback] msg_type is: pushMetrics
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.547.199 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:111] RegisterRoute] request handler http url is: http://192.168.199.162:9022/pushMetrics
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.547.205 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/timer.cc:157] RegisterTimer] Register timer for globalTimer, time length in seconds: 4294967
+[WARNING] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.547.209 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:91] InitIteration] instance name is empty
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.547.218 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:530] InitConfig] Create Directory :.. success.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.547.221 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:328] InitEventTxtFile] Create Directory :event.txt success.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.547.262 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:35] Start] [Server start]: The node role:SERVER the node id:192.168.199.162:41873::2024-02-26-16:09:11.520.767::69383 start communicator and http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.547.361 [mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:277] StartHttpServer] Initialize http server IP:192.168.199.162, PORT:9022
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.548.783 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:77] InitServer] Bind ip:192.168.199.162 port:9022 successful!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.548.789 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_server.cc:122] Start] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.548.812 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.548.851 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.548.896 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.548.929 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.548.970 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.549.019 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fb940ff9700,python):2024-02-26-16:09:11.549.039 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.549.055 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.549.103 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fb8bbffe700,python):2024-02-26-16:09:11.549.106 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.549.186 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fb8bb7fd700,python):2024-02-26-16:09:11.549.182 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.549.278 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fb8baffc700,python):2024-02-26-16:09:11.549.282 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.549.407 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fb8b9ffa700,python):2024-02-26-16:09:11.549.409 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fb8ba7fb700,python):2024-02-26-16:09:11.549.393 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fb8b8ff8700,python):2024-02-26-16:09:11.549.490 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fb8b97f9700,python):2024-02-26-16:09:11.549.506 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fb897fff700,python):2024-02-26-16:09:11.549.563 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fb8977fe700,python):2024-02-26-16:09:11.549.584 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fb896ffd700,python):2024-02-26-16:09:11.549.676 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.567.461 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.567.608 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fb8967fc700,python):2024-02-26-16:09:11.567.706 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.567.736 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fb8957fa700,python):2024-02-26-16:09:11.567.826 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.567.836 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fb895ffb700,python):2024-02-26-16:09:11.567.854 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.567.949 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:87] Initialize] Ev http register handle of: [/pushMetrics, /getModel, /pushWeight, /updateModel, /pullWeight, /startFLJob] success.
+[INFO] FEDERATED(160609,7fb894ff9700,python):2024-02-26-16:09:11.568.025 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.568.033 [mindspore_federated/fl_arch/ccsrc/common/core/abstract_node.cc:281] StartHttpServer] Http communicator started.
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.568.072 [mindspore_federated/fl_arch/ccsrc/server/server_node.cc:39] Start] [Server start]: Successfully start server node!
+[INFO] FEDERATED(160609,7fb86ffff700,python):2024-02-26-16:09:11.568.072 [mindspore_federated/fl_arch/ccsrc/common/communicator/http_request_handler.cc:92] Run] Start http server!
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.568.481 [mindspore_federated/fl_arch/ccsrc/server/server.cc:403] RegisterServer] Success to register server 192.168.199.162:41873::2024-02-26-16:09:11.520.767::69383 to distributed cache
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.568.584 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/server.cc:202] UnlockCache] Unlock server successfully
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.568.601 [mindspore_federated/fl_arch/ccsrc/server/server.cc:75] Run] Server started successfully.
+[INFO] FEDERATED(160609:140437654094464,MainProcess):2024-02-26-16:09:11.568.650 [mindspore_federated/startup/federated_local.py:188] after started callback
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.568.807 [mindspore_federated/fl_arch/ccsrc/server/server.cc:175] RunMainProcess] Begin run main process, start iteration: 1, instance name: i_2024-02-26-16:09:11.526.537, instance state: Running
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.568.823 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:539] StartThreadToRecordDataRate] Start to create a thread to record data rate
+[INFO] FEDERATED(160609,7fba307c4280,python):2024-02-26-16:09:11.568.893 [mindspore_federated/fl_arch/ccsrc/common/distributed_cache/iteration_task_thread.cc:25] Start] Start thread that handles counter and timer events
+[INFO] FEDERATED(160609,7fb86f7fe700,python):2024-02-26-16:09:11.568.997 [mindspore_federated/fl_arch/ccsrc/server/iteration.cc:542] operator()] The data rate file path is ..
